@@ -13,7 +13,9 @@ import Error404 from './Error404';
 import Header from './Header';
 
 import AsyncHomeRoute from './AsyncHomeRoute';
-import AsyncCounterRoute from './AsyncCounterRoute';
+
+import AsyncPostsRoute from './AsyncPostsRoute';
+
 import AsyncAboutRoute from './AsyncAboutRoute';
 
 function DemoApp() {
@@ -115,7 +117,7 @@ function DemoApp() {
       <div style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
         <Switch>
           <Route exact path="/" component={AsyncHomeRoute} />
-          <Route path="/counter" component={AsyncCounterRoute} />
+          <Route path="/posts" component={AsyncPostsRoute} />
           <Route path="/about" component={AsyncAboutRoute} />
           <Route component={Error404} />
         </Switch>
